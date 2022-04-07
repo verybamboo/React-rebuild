@@ -32,12 +32,12 @@ function App() {
       <div class="rightSide">
         {characters && <h1>Japanese Name: {characters[index].japaneseName}</h1>}
         {characters && <p>Age: {characters[index].age}</p>}
-        {characters && <p>Gender: ${characters[index].gender}</p>}
-        {characters && <p>Height: ${characters[index].height}</p>}
-        {characters && <p>Job: ${characters[index].job}</p>}
-        {characters && <p>Origin: ${characters[index].origin}</p>}
-        {characters && <p>Race: ${characters[index].race}</p>}
-        {characters && <p>Weight: ${characters[index].weight}</p>}
+        {characters && <p>Gender: {characters[index].gender}</p>}
+        {characters && <p>Height: {characters[index].height}</p>}
+        {characters && <p>Job: {characters[index].job}</p>}
+        {characters && <p>Origin: {characters[index].origin}</p>}
+        {characters && <p>Race: {characters[index].race}</p>}
+        {characters && <p>Weight: {characters[index].weight}</p>}
       </div>
     </div>
   );
