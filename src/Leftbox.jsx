@@ -1,5 +1,4 @@
 import React from "react"
-import App from "./App"
 
 function Leftbox(props) {
   console.log(props)
