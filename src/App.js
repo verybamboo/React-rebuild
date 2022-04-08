@@ -8,6 +8,7 @@ import clearLeft64 from "./img/clearleft64.png";
 import clearRight64 from "./img/clearright64.png";
 import randomButton from "./img/random642.png";
 import imgLogo from "./img/FFI_logo.png";
+import bgGif from "./img/ffbggif.gif";
 
 function App(props) {
   const [characters, setCharacters] = useState(false);
@@ -45,7 +46,7 @@ function App(props) {
   }
 
   return (
-    <header>
+    <body className="whole">
       <h1>
         <img src={imgLogo} alt="logo" />
       </h1>
@@ -73,7 +74,7 @@ function App(props) {
           </button>
         </div>
       </div>
-    </header>
+    </body>
   );
 }
 

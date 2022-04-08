@@ -1,7 +1,11 @@
 body {
   text-align: center;
   font-family: 'Girassol', cursive;
-  background: #0C0C99;
+  background: url("./img/ffbggif.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
@@ -13,10 +17,14 @@ p {
   border-radius: 5px;
 }
 
-img {
+.charImage {
   border: 2px solid #E2E5ED;
   border-radius: 5px;
   padding: 10px;
+}
+
+.whole{
+  background-image: ;
 }
 
 .leftSide {
@@ -47,7 +55,6 @@ img {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  background: #0C0C99;
   padding: 1em;
   font-family: 'Girassol', cursive;
   font-weight: bold;
@@ -76,11 +83,14 @@ img {
 .leftButton, .rightButton, .randomButton {
   background: rgba(255, 255, 255, 0.);
   cursor: pointer;
-  border-radius: 50%;
   margin: 0 5px;
   top: 50%;
   border: 0;
   background: transparent;
+  border: 2px solid #E2E5ED;
+  border-radius: 5px;
+  padding: 10px;
+  background: #0C0C99;
 }
 
 .slides:hover {
