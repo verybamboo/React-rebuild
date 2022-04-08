@@ -1,38 +1,88 @@
-.App {
+body {
   text-align: center;
+  font-family: 'Girassol', cursive;
+  background: #0C0C99;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #E2E5ED;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  border: 2px solid #E2E5ED;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  border: 2px solid #E2E5ED;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.leftSide {
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.rightSide {
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.box {
+  text-align: center;
+  width: 33%
+}
+
+#img {
+  width: 34%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.characterBio {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #0C0C99;
+  padding: 1em;
+  font-family: 'Girassol', cursive;
+  font-weight: bold;
+  font-size: 2em;
+  color: #E2E5ED;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.charImage {
+  height: 6em;
+  width: 5em;
+}
+
+.slides {
+  height: 300px;
+}
+
+.mainBox {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+  height: 450px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.leftButton, .rightButton, .randomButton {
+  background: rgba(255, 255, 255, 0.);
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 5px;
+  top: 50%;
+  border: 0;
+  background: transparent;
+}
+
+.slides:hover {
+  transform: scale(2);
 }

@@ -1,10 +1,17 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import React from "react";
+import Leftbox from "./Leftbox";
+import Image from "./Image";
+import Rightbox from "./Rightbox";
+import clearLeft64 from "./img/clearleft64.png";
+import clearRight64 from "./img/clearright64.png";
+import randomButton from "./img/random642.png";
+import imgLogo from "./img/FFI_logo.png";
 
-function App() {
+function App(props) {
   const [characters, setCharacters] = useState(false);
-  let index = 0;
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     fetch("https://www.moogleapi.com/api/v1/characters")
@@ -16,30 +23,57 @@ function App() {
     return <>Still loading...</>;
   }
 
+  function increment() {
+    if (index >= characters.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex((index) => index + 1);
+    }
+  }
+
+  function decrement() {
+    if (index <= 0) {
+      setIndex(characters.length - 1);
+    } else {
+      setIndex((index) => index - 1);
+    }
+  }
+
+  function random() {
+    setIndex(Math.floor(Math.random() * characters.length));
+    console.log(index);
+  }
+
   return (
-    <div className="mainbox">
-      <div className="leftSide">
-        {characters && <h1>Name: {characters[index].name}</h1>}
-        {characters && <p>Description: {characters[index].description}</p>}
-      </div>
-      <div class="slides">
-        <div className="images">
-          {characters && (
-            <img src={characters[index].pictures[0].url} alt="charImage" />
-          )}
+    <header>
+      <h1>
+        <img src={imgLogo} alt="logo" />
+      </h1>
+      <div className="mainBox">
+        <div className="characterBio">
+          <div className="box">
+            <Leftbox characters={characters} index={index} />
+          </div>
+          <div className="box" id="img">
+            <Image characters={characters} index={index} />
+          </div>
+          <div className="box">
+            <Rightbox characters={characters} index={index} />
+          </div>
+        </div>
+        <div className="buttons">
+          <button className="leftButton" onClick={decrement}>
+            <img src={clearLeft64} alt="leftarrow" />
+          </button>
+          <button className="randomButton" onClick={random}>
+            <img src={randomButton} alt="random" />
+          </button>
+          <button className="rightButton" onClick={increment}>
+            <img src={clearRight64} alt="rightarrow" />
+          </button>
         </div>
       </div>
-      <div class="rightSide">
-        {characters && <h1>Japanese Name: {characters[index].japaneseName}</h1>}
-        {characters && <p>Age: {characters[index].age}</p>}
-        {characters && <p>Gender: {characters[index].gender}</p>}
-        {characters && <p>Height: {characters[index].height}</p>}
-        {characters && <p>Job: {characters[index].job}</p>}
-        {characters && <p>Origin: {characters[index].origin}</p>}
-        {characters && <p>Race: {characters[index].race}</p>}
-        {characters && <p>Weight: {characters[index].weight}</p>}
-      </div>
-    </div>
+    </header>
   );
 }
 
