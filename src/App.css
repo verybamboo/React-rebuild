@@ -90,7 +90,10 @@ p {
   border: 2px solid #E2E5ED;
   border-radius: 5px;
   padding: 10px;
-  background: #0C0C99;
+}
+
+.buttonImg{
+  height: 10%;
 }
 
 .slides:hover {

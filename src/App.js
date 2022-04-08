@@ -4,11 +4,10 @@ import React from "react";
 import Leftbox from "./Leftbox";
 import Image from "./Image";
 import Rightbox from "./Rightbox";
-import clearLeft64 from "./img/clearleft64.png";
-import clearRight64 from "./img/clearright64.png";
-import randomButton from "./img/random642.png";
+import moogleLeft from "./img/mooglepointingleft.png";
+import moogleRight from "./img/mooglepointingright.png";
+import randomButton from "./img/shuffleicon.png";
 import imgLogo from "./img/FFI_logo.png";
-import bgGif from "./img/ffbggif.gif";
 
 function App(props) {
   const [characters, setCharacters] = useState(false);
@@ -64,13 +63,13 @@ function App(props) {
         </div>
         <div className="buttons">
           <button className="leftButton" onClick={decrement}>
-            <img src={clearLeft64} alt="leftarrow" />
+            <img src={moogleLeft} className="buttonImg" alt="leftarrow" />
           </button>
           <button className="randomButton" onClick={random}>
-            <img src={randomButton} alt="random" />
+            <img src={randomButton} className="buttonImg" alt="random" />
           </button>
           <button className="rightButton" onClick={increment}>
-            <img src={clearRight64} alt="rightarrow" />
+            <img src={moogleRight} className="buttonImg" alt="rightarrow" />
           </button>
         </div>
       </div>
