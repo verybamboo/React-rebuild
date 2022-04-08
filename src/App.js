@@ -50,6 +50,9 @@ function App(props) {
         <img src={imgLogo} alt="logo" />
       </h1>
       <div className="mainBox">
+        {characters.map(
+          (characters) =>
+            characters.name.toLowerCase().includes(characters.name.toLowerCase())
         <div className="characterBio">
           <div className="box">
             <Leftbox characters={characters} index={index} />
@@ -61,6 +64,7 @@ function App(props) {
             <Rightbox characters={characters} index={index} />
           </div>
         </div>
+        )
         <div className="buttons">
           <button className="leftButton" onClick={decrement}>
             <img src={clearLeft64} alt="leftarrow" />
