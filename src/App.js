@@ -4,10 +4,8 @@ import React from "react";
 import Leftbox from "./Leftbox";
 import Image from "./Image";
 import Rightbox from "./Rightbox";
-import moogleLeft from "./img/mooglepointingleft.png";
-import moogleRight from "./img/mooglepointingright.png";
-import randomButton from "./img/shuffleicon.png";
 import imgLogo from "./img/FFI_logo.png";
+import Buttons from "./Buttons";
 
 function App(props) {
   const [characters, setCharacters] = useState(false);
@@ -41,7 +39,6 @@ function App(props) {
 
   function random() {
     setIndex(Math.floor(Math.random() * characters.length));
-    console.log(index);
   }
 
   return (
@@ -51,26 +48,22 @@ function App(props) {
       </h1>
       <div className="mainBox">
         <div className="characterBio">
-          <div className="box">
+          <div className="box1">
             <Leftbox characters={characters} index={index} />
           </div>
-          <div className="box" id="img">
+          <div className="box2" id="img">
             <Image characters={characters} index={index} />
           </div>
-          <div className="box">
+          <div className="box3">
             <Rightbox characters={characters} index={index} />
           </div>
         </div>
-        <div className="buttons">
-          <button className="leftButton" onClick={decrement}>
-            <img src={moogleLeft} className="buttonImg" alt="leftarrow" />
-          </button>
-          <button className="randomButton" onClick={random}>
-            <img src={randomButton} className="buttonImg" alt="random" />
-          </button>
-          <button className="rightButton" onClick={increment}>
-            <img src={moogleRight} className="buttonImg" alt="rightarrow" />
-          </button>
+        <div>
+          <Buttons
+            increment={increment}
+            decrement={decrement}
+            random={random}
+          />
         </div>
       </div>
     </body>

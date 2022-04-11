@@ -6,6 +6,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-shadow: 2px 2px 2px black;
 }
 
 h1 {
@@ -15,6 +16,10 @@ h1 {
 p {
   border: 2px solid #E2E5ED;
   border-radius: 5px;
+}
+
+.description{
+  padding: 1em;
 }
 
 .charImage {
@@ -39,9 +44,9 @@ p {
   height: 100%;
 }
 
-.box {
+.box1, .box2, .box3  {
   text-align: center;
-  width: 33%
+  width: 33%;
 }
 
 #img {
@@ -89,7 +94,7 @@ p {
   background: transparent;
   border: 2px solid #E2E5ED;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px;overflow-x: ;
 }
 
 .buttonImg{
