@@ -8,7 +8,7 @@ function Buttons(props) {
     <div className="buttons">
           <button className="leftButton" onClick={props.decrement}>
             <img src={moogleLeft} className="buttonImg" alt="leftarrow" />
-          </button>
+          </button> 
           <button className="randomButton" onClick={props.random}>
             <img src={randomButton} className="buttonImg" alt="random" />
           </button>
