@@ -1,6 +1,6 @@
-# UI Element Project
+# React Rebuild
 
-Project 3: Final Fantasy API
+Project 6: Final Fantasy API with React
 
 <img width="1440" alt="Screen Shot 2022-04-24 at 2 23 21 PM" src="https://user-images.githubusercontent.com/57966235/164990870-079361f3-a2fd-4ea6-88aa-2df8e249071c.png">
 
