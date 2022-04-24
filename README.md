@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# UI Element Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project 3: Final Fantasy API
 
-## Available Scripts
+<img width="1440" alt="Screen Shot 2022-04-24 at 2 23 21 PM" src="https://user-images.githubusercontent.com/57966235/164990870-079361f3-a2fd-4ea6-88aa-2df8e249071c.png">
 
-In the project directory, you can run:
+Git: https://github.com/verybamboo/React-rebuild
+Deployed: https://kaleidoscopic-mousse-1212c1.netlify.app/
 
-### `npm start`
+# Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I made this webpage pulling information from an existing API for Final Fantasy characters.
 
-### `npm test`
+# Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+A simple webpage that allows you to scroll through all the characters from all Final Fantasy games. You can press the arrows to nagivate left or right depending on the arrow. You can also use the random button in the middle to pick a random character. The slides loop around back to the beginning or end, infinitely depending on which way you are going. The information is printed to the right, the image of the character is placed in the middle and the description of the character will be on the left.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Thoughts and Approach
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I created 3 different divs and then passed in information of a Final Fantasy character. For spacing and visual reasons, I chose to break it down into 3 so it is easier to read. Using the original concept from my first version of this website with only JS, HTML and CSS, I was able to transfer it over using React.
 
-### `npm run eject`
+# Future Goals
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. I plan to further style and change the way the website looks as I gain more practice and skill into CSS. There are also other APIs that I can add to the website, such as the Monsters API and the Items API.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. CSS
+2. HTML
+3. JavaScript
+4. React
