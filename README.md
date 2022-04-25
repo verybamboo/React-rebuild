@@ -40,3 +40,4 @@ I created 3 different divs and then passed in information of a Final Fantasy cha
 2. HTML
 3. JavaScript
 4. React
+5. Netlify
